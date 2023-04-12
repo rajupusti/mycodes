@@ -1,0 +1,7 @@
+function fill (selector, data){
+    document.getElementById(selector).value = data;
+}
+fill ("custid","123456789");
+fill("usrname","rajupusti");
+fill("usrpwd","raju@1995");
+document.getElementById(loginBtn).click;
