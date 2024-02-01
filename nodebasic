@@ -1,0 +1,27 @@
+// basic functions
+ const fn = ()=>{
+    return "raju";
+}
+const sn  = () =>{
+    return " pusti"
+}
+
+//single function or variable export
+exports.fname = fn;
+exports.sname = sn;
+
+//multiple variable or function export
+module.exports={
+    fn,  
+    sn
+}
+
+
+
+ // importing to another js file or use from another file , must be javascript file
+ //for all functions
+const allFunction = require(./script.js)
+ console.log(allFunction.sn())
+// for particular function or functions
+ const {fn} = require(./script.js)
+ console.log(fn())
