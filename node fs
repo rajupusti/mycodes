@@ -1,0 +1,17 @@
+const fs = require("fs")
+// writefile method  completely write, completly rewrite and create  a file when file not exist
+const newFile = fs.writeFile("raju.txt", "i am raju" , (err)=>{
+    if(err){
+        console.log(err)
+    } 
+     else console.log("created")
+})
+// unlink method delete a exiting file
+setTimeout(()=>{
+    const delFile = fs.unlink("raju.txt",  (err)=>{
+        if(err){
+            console.log(err)
+        } 
+         else console.log("deleted")
+    })
+}, 6000)
